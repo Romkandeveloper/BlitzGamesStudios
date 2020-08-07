@@ -11,7 +11,7 @@
 
 .btn{
     display: inline-block;
-    padding: 15px 34px;
+    padding: 11px 34px;
     background-color: $secondary-color;
     color: #fff;
     font-size: 11px;
@@ -99,7 +99,7 @@
 }
 
 .section{
-    padding: 54px 0;
+    padding-top: 54px;
     &__header{
         display: flex;
         justify-content: space-between;
@@ -123,6 +123,7 @@
         max-width: 762px;
         font-size: 15px;
         font-weight: 400;
+        font-style: italic;
         line-height: 25px;
     }
 }
@@ -194,5 +195,54 @@
         font-style: italic;
         color: #999999;
     }
+}
 
+.work{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        color: #b1b1b1;
+        width: 49%;
+        min-width: 430px;
+        flex: 1 1 auto;
+        padding: 34px 29px 21px 74px;
+        background-color: #fff;
+        margin-bottom: 15px;
+    }
+    &__name{
+        color: #4b4b4b;
+        font-size: 21px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    &__description{
+        margin-bottom: 25px;
+        flex-grow: 1;
+        
+    }
+    &__info{
+        display: flex;
+        margin-bottom: 15px;
+    }
+    &__address{
+        padding-left: 27px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    &__time{
+        padding-left: 27px;
+    }
+    &__btn{
+        align-self: flex-start;
+    }
+}
+
+.network{
+    display: flex;
+    flex-wrap: wrap;
 }
