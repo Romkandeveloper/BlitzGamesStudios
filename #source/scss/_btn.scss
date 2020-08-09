@@ -1,0 +1,49 @@
+.btn{
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: .1s ease-in-out;
+
+    &_theme{
+        &_orange, &_white{
+            padding: 11px 34px;
+        }
+        &_orange{
+            background-color: $secondary-color;
+            color: #fff;
+            &:hover{
+                background-color: darken($color: $secondary-color, $amount: 10%);
+            }
+        }
+        &_white{
+            background-color: #fff;
+            color: #241c1f;
+            &:hover{
+                background-color: darken($color: #fff, $amount: 25%);
+            }
+        }
+        &_half-orange, &_half-white{
+            padding: 8px 31px;
+            background-color: transparent;
+            border: 3px solid;
+        }
+        &_half-orange{
+            color: $secondary-color;
+            border-color: $secondary-color;
+            &:hover{
+                background-color: $secondary-color;
+                color: #fff;
+            }
+        }
+        &_half-white{
+            color: #fff;
+            border-color: #fff;
+            &:hover{
+                background-color: #fff;
+                color: #241c1f;
+            }
+        }
+    }
+}
